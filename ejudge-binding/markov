@@ -6,7 +6,7 @@
 # * https://ejudge.ru/wiki/index.php/Foo-version.in
 # * https://github.com/blackav/ejudge/tree/master/scripts
 
-LANG_CONFIG_DIR="/home/judges/compile/conf/lang.d"
+LANG_CONFIG_DIR="@lang_config_dir@"
 [ "${EJUDGE_LANG_CONFIG}" = "" ] && EJUDGE_LANG_CONFIG="${LANG_CONFIG_DIR}/markov.cfg"
 
 if [ -f "${EJUDGE_LANG_CONFIG}" ]
